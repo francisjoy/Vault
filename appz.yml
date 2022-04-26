@@ -33,4 +33,4 @@ properties:
     ENABLE_AUTO_PASSWORD: True
     ENABLE_UI: True
     
-    revision: 36
+    revision: 37
