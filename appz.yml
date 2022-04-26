@@ -13,7 +13,7 @@ build:
 deploy:
     context: francisjoy/DEV
     type: statefulset
-    ingress: none
+    ingress: service_namespace
     replicas: 1
     port:
     - 8200
