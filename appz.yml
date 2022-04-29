@@ -13,7 +13,6 @@ build:
 deploy:
     context: francisjoy/DEV
     type: statefulset
-    ingress: service_namespace
     replicas: 1
     port:
     - 8200
@@ -24,12 +23,10 @@ volumes:
     mount: /appz/home
     name: home
     size: 5Gi
-    class: microk8s-hostpath
   - claim: vault-data
     mount: /appz/data
     name: data
     size: 5Gi
-    class: microk8s-hostpath
 
 properties:
     ENABLE_AUTO_PASSWORD: True
