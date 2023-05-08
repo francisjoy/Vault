@@ -5,13 +5,13 @@ app:
 
 build:
     version: 0.4
-    env: DEV
+    env: DEV2
     build_file: none
     output_files: output/*.zip
     image_template: vault-1.2
 
 deploy:
-    context: francisjoy/DEV
+    context: francisjoy/DEV2
     type: statefulset
     replicas: 1
     port:
