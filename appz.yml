@@ -32,4 +32,4 @@ properties:
     ENABLE_AUTO_PASSWORD: True
     ENABLE_UI: True
     
-    revision: 42
+    revision: 43
